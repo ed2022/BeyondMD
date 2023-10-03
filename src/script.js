@@ -2,10 +2,12 @@
 const body = document.querySelector('body'); 
 const container = document.querySelector('.container'); 
 const message = document.querySelector('h1'); 
+const emoji = document.querySelector('.emoji-container'); 
 
-const backgroundColors = ['#78DFF2','#B2F7EF', '#EFF7F6', '#F7D6E0', '#F2B5D4']; 
-const fontColors = ['#FFBFC5', '#FEE5E0', '#FFFFFF','#B3DBD8','#A8D1E7']; 
-const emojis = ['&#128514;', '&#128515;', '&#128517;', '&#128516;', '&#128512;']
+//Arrays of things that could happen! 
+const backgroundColors = ['#FFC49F','#F49F95', '#C5A5B0', '#FDAFA4', '#CAC6E1']; 
+const fontColors = ['#2A255C', '#3558AE', '#B64074','#F9C3D7','#B64074']; 
+const emojisImgs = ['&#129442;', '&#129436;', '&#128056;', '&#128011;', '&#129419;']
 let index = 0;
  
 
@@ -15,6 +17,7 @@ function designHandler(){
     console.log(index); 
 }
 
+// This is what will happen when we use the event handlers! 
 function eventHandler(){
     console.log("Working!");
     designHandler();
@@ -22,10 +25,11 @@ function eventHandler(){
     console.log(`background color: ${body.style.background}`); 
     message.style.color = fontColors[index];
     console.log(`font color: ${message.style.color}`); 
+    emoji.innerHTML = emojisImgs[index]; 
+    console.log(`emoji : ${emoji.innerHTML}`); 
 }
 
-
+// Adding multiple event Handlers! 
 window.addEventListener('click', eventHandler); 
 window.addEventListener('keypress', eventHandler); 
 
-container.appendChild(message); 
