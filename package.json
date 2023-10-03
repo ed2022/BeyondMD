@@ -2,22 +2,22 @@
   "name": "beyondmd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/script.js",
   "scripts": {
-    "start": "node script.js",
+    "start": "node src/script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ed2022/BeyondMD.git"
+    "url": "git+https://github.com/ed2022/beyondMD.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ed2022/BeyondMD/issues"
+    "url": "https://github.com/ed2022/beyondMD/issues"
   },
-  "homepage": "https://github.com/ed2022/BeyondMD#readme",
+  "homepage": "https://github.com/ed2022/beyondMD#readme",
   "dependencies": {
     "express": "^4.18.2"
   }
